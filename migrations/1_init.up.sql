@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    email TEXT NOT NULL UNIQUE,
+    password TEXT NOT NULL,
+    isAdmin BOOL DEFAULT 0
+);
+
+CREATE TABLE IF NOT EXISTS user_details (
+	id INTEGER PRIMARY KEY,
+	name TEXT,
+	phone TEXT,
+	date_of_birth TEXT
+);
